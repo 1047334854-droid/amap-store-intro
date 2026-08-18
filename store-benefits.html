@@ -49,19 +49,18 @@ th { background: #fafafa; font-weight: 600; }
 .divider { border: none; border-top: 1px solid #eee; margin: 24px 0; }
 
 /* 顶部导航 */
-.top-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eee; padding: 0; margin: -20px -16px 24px; }
+body { padding-top: 52px; }
+.top-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eee; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
 .top-nav-inner { max-width: 820px; margin: 0 auto; display: flex; gap: 4px; padding: 8px 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 .top-nav-inner::-webkit-scrollbar { display: none; }
 .top-nav a { flex-shrink: 0; font-size: 13px; color: #555; text-decoration: none; padding: 6px 12px; border-radius: 16px; white-space: nowrap; transition: all 0.2s; }
 .top-nav a:hover { background: #f0f7ff; color: #1890ff; }
 .top-nav a.gold { background: #fdf6e3; color: #b8860b; font-weight: 600; }
 .top-nav a.gold:hover { background: #f5e8b8; }
+@media (max-width: 640px) { body { padding-top: 48px; } }
 </style>
 </head>
 <body>
-<div class="container">
-
-<h1>高德业务合作效果</h1>
 <nav class="top-nav">
   <div class="top-nav-inner">
     <a href="#s1">商户通效果</a>
@@ -70,6 +69,9 @@ th { background: #fafafa; font-weight: 600; }
     <a href="#s4">合作收益</a>
   </div>
 </nav>
+<div class="container">
+
+<h1>高德业务合作效果</h1>
 
 <!-- 板块一：商户通效果 -->
 <h2 id="s1">一、商户通效果</h2>
@@ -487,13 +489,15 @@ th { background: #fafafa; font-weight: 600; }
 }
 
 /* 顶部导航 */
-.top-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eee; padding: 0; margin: -20px -16px 24px; }
+body { padding-top: 52px; }
+.top-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eee; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
 .top-nav-inner { max-width: 820px; margin: 0 auto; display: flex; gap: 4px; padding: 8px 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 .top-nav-inner::-webkit-scrollbar { display: none; }
 .top-nav a { flex-shrink: 0; font-size: 13px; color: #555; text-decoration: none; padding: 6px 12px; border-radius: 16px; white-space: nowrap; transition: all 0.2s; }
 .top-nav a:hover { background: #f0f7ff; color: #1890ff; }
 .top-nav a.gold { background: #fdf6e3; color: #b8860b; font-weight: 600; }
 .top-nav a.gold:hover { background: #f5e8b8; }
+@media (max-width: 640px) { body { padding-top: 48px; } }
 </style>
 
 <div class="vsc-hero">
