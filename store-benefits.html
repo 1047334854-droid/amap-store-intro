@@ -6,7 +6,7 @@
 <title>合作后运营商门店具体能得到什么</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f5f5f5; color: #333; line-height: 1.7; }
+html { scroll-behavior: smooth; }\nbody { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f5f5f5; color: #333; line-height: 1.7; }
 .container { max-width: 820px; margin: 0 auto; background: #fff; padding: 20px 16px 40px; }
 h1 { font-size: 22px; font-weight: 700; text-align: center; margin: 20px 0 30px; color: #1a1a1a; }
 h2 { font-size: 18px; font-weight: 700; margin: 30px 0 16px; color: #1a1a1a; border-left: 4px solid #1890ff; padding-left: 10px; }
@@ -46,15 +46,37 @@ th { background: #fafafa; font-weight: 600; }
 .screenshot-card img { width: 100%; border-radius: 4px; }
 .screenshot-card p { font-size: 12px; color: #666; margin-top: 6px; }
 .divider { border: none; border-top: 1px solid #eee; margin: 24px 0; }
+
+/* 顶部导航 */
+.top-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eee; padding: 0; margin: -20px -16px 24px; }
+.top-nav-inner { max-width: 820px; margin: 0 auto; display: flex; gap: 4px; padding: 8px 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.top-nav-inner::-webkit-scrollbar { display: none; }
+.top-nav a { flex-shrink: 0; font-size: 13px; color: #555; text-decoration: none; padding: 6px 12px; border-radius: 16px; white-space: nowrap; transition: all 0.2s; }
+.top-nav a:hover { background: #f0f7ff; color: #1890ff; }
+.top-nav a.gold { background: #fdf6e3; color: #b8860b; font-weight: 600; }
+.top-nav a.gold:hover { background: #f5e8b8; }
 </style>
 </head>
 <body>
 <div class="container">
 
 <h1>合作后运营商门店具体能得到什么</h1>
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <a href="#s1">门店门面升级</a>
+    <a href="#s2">真实投放数据</a>
+    <a href="#s3">客资管理</a>
+    <a href="#s4">客资成本</a>
+    <a href="#s5">防截流机制</a>
+    <a href="#s6" class="gold">旺铺vs商户通</a>
+    <a href="#s7">合作收益总结</a>
+    <a href="#s8">后台截图</a>
+  </div>
+</nav>
+
 
 <!-- 第一章 -->
-<h2>一、门店在高德上的"门面"升级</h2>
+<h2 id="s1">一、门店在高德上的"门面"升级</h2>
 
 <h3>1. 门店详情页整体对比</h3>
 <p>用户点击门店后看到的第一印象：</p>
@@ -197,7 +219,7 @@ th { background: #fafafa; font-weight: 600; }
 <hr class="divider">
 
 <!-- 第二章 -->
-<h2>二、真实投放数据：花多少钱，带来多少客资</h2>
+<h2 id="s2">二、真实投放数据：花多少钱，带来多少客资</h2>
 
 <p>以下数据来自真实运营后台，不是估算，不是承诺，是已经跑出来的结果。</p>
 
@@ -234,7 +256,7 @@ th { background: #fafafa; font-weight: 600; }
 <hr class="divider">
 
 <!-- 第三章 -->
-<h2>三、客资管理：每个咨询都留痕</h2>
+<h2 id="s3">三、客资管理：每个咨询都留痕</h2>
 
 <h3>客资列表后台</h3>
 <ul>
@@ -265,7 +287,7 @@ th { background: #fafafa; font-weight: 600; }
 <hr class="divider">
 
 <!-- 第四章 -->
-<h2>四、客资成本拆解</h2>
+<h2 id="s4">四、客资成本拆解</h2>
 
 <table>
 <tr><th>项目</th><th>金额</th></tr>
@@ -293,7 +315,7 @@ th { background: #fafafa; font-weight: 600; }
 <hr class="divider">
 
 <!-- 第五章 -->
-<h2>五、防截流机制</h2>
+<h2 id="s5">五、防截流机制</h2>
 
 <h3>运营商门店截流痛点</h3>
 <div class="pain">
@@ -329,7 +351,7 @@ th { background: #fafafa; font-weight: 600; }
 
 <!-- 旺铺vs商户通 (inserted) -->
 <!-- 旺铺 vs 商户通对比 -->
-<h2>六、旺铺 vs 商户通：为什么建议直接上商户通</h2>
+<h2 id="s6">六、旺铺 vs 商户通：为什么建议直接上商户通</h2>
 
 <style>
 .vsc-hero { background: linear-gradient(135deg, #d4a017 0%, #f0c040 100%); border-radius: 12px; padding: 24px; margin: 16px 0; color: #1a1a1a; text-align: center; }
@@ -417,6 +439,15 @@ th { background: #fafafa; font-weight: 600; }
   .vsc-sc-img { flex: none; width: 100%; max-width: 280px; }
   .vsc-rules-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* 顶部导航 */
+.top-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eee; padding: 0; margin: -20px -16px 24px; }
+.top-nav-inner { max-width: 820px; margin: 0 auto; display: flex; gap: 4px; padding: 8px 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.top-nav-inner::-webkit-scrollbar { display: none; }
+.top-nav a { flex-shrink: 0; font-size: 13px; color: #555; text-decoration: none; padding: 6px 12px; border-radius: 16px; white-space: nowrap; transition: all 0.2s; }
+.top-nav a:hover { background: #f0f7ff; color: #1890ff; }
+.top-nav a.gold { background: #fdf6e3; color: #b8860b; font-weight: 600; }
+.top-nav a.gold:hover { background: #f5e8b8; }
 </style>
 
 <div class="vsc-hero">
@@ -617,7 +648,7 @@ th { background: #fafafa; font-weight: 600; }
 <hr class="divider">
 
 <!-- 第七章 -->
-<h2>七、合作后门店得到什么（总结）</h2>
+<h2 id="s7">七、合作后门店得到什么（总结）</h2>
 
 <div class="summary-list">
 <div class="summary-item">
@@ -649,7 +680,7 @@ th { background: #fafafa; font-weight: 600; }
 <hr class="divider">
 
 <!-- 第七章 -->
-<h2>八、后台截图展示</h2>
+<h2 id="s8">八、后台截图展示</h2>
 
 <p>以下为高德广告投放平台真实后台截图：</p>
 
